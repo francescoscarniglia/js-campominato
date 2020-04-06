@@ -34,10 +34,27 @@
 var randomPc = [];
 
 for(var i=0; i < 16; i++) {
-  var numeroPc = Math.floor(Math.random()* 100) - 1;
+  var numeroPc = Math.floor(Math.random()* 100) + 1;
   randomPc.includes(numeroPc);
   randomPc.push(numeroPc);
   console.log('Numero random pc:'+  numeroPc);
 }
 
-console.log(randomPc.length); // mi serve per capire
+console.log('Questa è la lunghezza dell\'array: ', randomPc.length);
+
+// 2° STEP
+// In seguito deve chiedere all’utente di inserire un numero alla
+//   volta, sempre compreso tra 1 e 100.
+var numeriUtente = [];
+for(var i=0; i < 16; i++) {
+  var numeroUtente = parseInt(prompt('Inserisci un numero compreso tra 1 e 100\nhai 3 tentativi'));
+  numeriUtente.includes(numeroPc);
+  numeriUtente.push(numeroPc);
+  console.log('Numero random pc:'+  numeroUtente);
+}
+
+while( numeroUtente < 1 || numeroUtente > 100){
+  var numeroUtente = parseInt(prompt('Inserisci un numero compreso tra 1 e 100\nhai 3 tentativi'));
+}
+
+console.log('Numero inserito dall\'utente: ', numeroUtente);
