@@ -31,6 +31,7 @@
 // Il computer deve generare 16 numeri casuali tra 1 e 100
 //   (numeri vietati).
 
+
 var randomPc = [];
 
 for(var i=0; i < 16; i++) {
@@ -45,16 +46,14 @@ console.log('Questa è la lunghezza dell\'array: ', randomPc.length);
 // 2° STEP
 // In seguito deve chiedere all’utente di inserire un numero alla
 //   volta, sempre compreso tra 1 e 100.
-var numeriUtente = [];
+var numeriUtente = [ ];
 for(var i=0; i < 16; i++) {
   var numeroUtente = parseInt(prompt('Inserisci un numero compreso tra 1 e 100\nhai 3 tentativi'));
-  numeriUtente.includes(numeroPc);
-  numeriUtente.push(numeroPc);
-  console.log('Numero random pc:'+  numeroUtente);
+  numeriUtente.includes(numeroUtente);
+  numeriUtente.push(numeroUtente);
+  console.log('Numero utente :'+  numeroUtente);
 }
 
 while( numeroUtente < 1 || numeroUtente > 100){
-  var numeroUtente = parseInt(prompt('Inserisci un numero compreso tra 1 e 100\nhai 3 tentativi'));
+  numeroUtente = parseInt(prompt('Inserisci un numero compreso tra 1 e 100\nhai 3 tentativi'));
 }
-
-console.log('Numero inserito dall\'utente: ', numeroUtente);
